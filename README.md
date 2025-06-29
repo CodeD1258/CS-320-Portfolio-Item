@@ -1,1 +1,12 @@
 # CS-320-Portfolio-Item
+
+
+Reflecting on the work I have done in these projects has given me valuable insight into how to build reliable, maintainable software that meets real user needs.
+
+One of the most important lessons I learned is that to ensure my code, program, or software is functional and secure, I need to combine rigorous testing with thoughtful design practices. For these projects, I wrote unit tests for every class and service, verifying not just that the “happy path” worked, but also that the program handled invalid inputs gracefully. For example, in my Appointment tests, I confirmed that dates in the past were rejected, preventing data integrity issues. I also took care to validate field lengths and null inputs to avoid unexpected crashes or vulnerabilities. In the future, I plan to expand on this by adding static analysis tools and security-focused reviews to catch weaknesses early.
+
+Interpreting user needs and incorporating them into a program is ultimately about listening carefully to requirements and translating them into precise, enforceable rules in the code. In this project, user needs were expressed as clear constraints: contact IDs had to be unique and limited to 10 characters, phone numbers exactly 10 digits, and appointment dates not in the past. I broke down each requirement into test cases and logic in the domain classes so that every piece of user expectation became a validation step in the software. This process helped me avoid ambiguity and ensured that the final behavior matched the customer’s intent.
+
+When I approach designing software, I start by considering how users will interact with the system and what data constraints must be enforced to maintain consistency. I think through the lifecycle of each object: how it is created, updated, and eventually removed. From there, I design classes that encapsulate the required behavior while keeping responsibilities clear and modular. For instance, I kept the ContactService focused purely on managing a collection of contacts, while the Contact class enforced individual field constraints. This separation of concerns made my code easier to test and adapt.
+
+Overall, this project reinforced that good software design and testing are inseparable. Careful planning, defensive coding, and thorough validation all work together to produce systems that users can trust and that developers can maintain with confidence.
